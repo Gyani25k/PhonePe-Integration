@@ -30,10 +30,6 @@ Use the functions and methods provided in `py` to initiate and manage payments. 
 ### 4. Save Payment Data
 After a successful payment, use `PhoneIntegration_JSON.py` to save payment-related data to a JSON file for record-keeping. Utilize `MobilePhonePe.py` to store the same information securely in a SQL database.
 
-
-## License
-This integration is provided under the [MIT License](LICENSE). Feel free to modify and distribute it according to your project's needs.
-
 ## Support
 For any questions or issues related to PhonePe integration, please contact our support team at kgyanender4@gmail.com.
 
