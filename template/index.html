@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="container">
+        
+        <form action="{{ url_for('make_payment') }}" method="post" id="paymentForm">
+            <input type="hidden" name="name" value="{{ name }}" required>
+            <input type="hidden" name="email" value="{{ email }}" required>
+            <input type="hidden" name="amount" value="{{ amount }}" required>
+            <input type="hidden" name="product_info" value="{{ product_info }}" required>
+            <input type="hidden" name="phone" value="{{ phone }}" required>
+            <input type="hidden" name="surl" value="{{ surl }}" required>
+            <input type="hidden" name="furl" value="{{ furl }}" required>
+            <input type="hidden" name="key" value="{{ key }}" required>
+            <input type="hidden" name="hash" value="{{ hash }}" required>
+            <input type="hidden" name="txnid" value="{{ txnid }}" required>
+            <input type="hidden" name="paymentId" value="{{ paymentId }}" required>
+            <input type="hidden" name="service_provider" value="{{ service_provider }}" required>
+            <br>
+        </form>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+                document.getElementById('paymentForm').submit();
+            });
+        </script>
+    </div>
+</body>
+</html>
